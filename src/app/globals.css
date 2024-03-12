@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 1.25rem;
+  align-items: center;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+}
+
+header div{
+  font-size: 1.1rem;
+}
+
+header i{
+  margin-right: 10px;
+}
+
+main{
+  margin-bottom: 4rem;
+}
+
+main, .links{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.links{
+  width: 100%;
+}
+
+main .links a{
+  border: 1px solid #000;
+  padding: 1rem;
+  margin: 2.5rem 0;
+  border-radius: 10px;
+  font-weight: bold;
+  width: 60%;
+}
+
+main .links a:hover{
+  background-color: #f0f8ff;
+}
+
+.box{
+  border: 1px solid #000;
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.box h3{
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+
+.infos{
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button{
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+footer{
+  padding: 0.5rem 3rem;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  position: fixed;
+  width: 100%;
+  font-size: 1.35rem;
+  text-align: center;
+  bottom: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer a{
+  margin: 0 0.5rem;
+}
