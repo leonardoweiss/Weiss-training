@@ -4,10 +4,24 @@
   margin: 0;
 }
 
+.dark{
+  --bg-general: #050505;
+  --texts: #fff;
+  --effects: #000;
+}
+
+.light{
+  --bg-general: #fff;
+  --texts: #000;
+  --effects: #f0f8ff;
+}
+
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  background-color: #fff;
+  background-color: var(--bg-general);
+  color: var(--texts);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header{
@@ -15,7 +29,7 @@ header{
   justify-content: space-between;
   padding: 0.75rem 1.25rem;
   align-items: center;
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 6px rgba(56, 56, 56, 0.4);
 }
 
 header div{
@@ -44,7 +58,7 @@ main, .links{
 }
 
 main .links a{
-  border: 1px solid #000;
+  border: 1px solid var(--texts);
   padding: 1rem;
   margin: 2.5rem 0;
   border-radius: 10px;
@@ -53,15 +67,50 @@ main .links a{
 }
 
 main .links a:hover{
-  background-color: #f0f8ff;
+  background-color: var(--effects);
+}
+
+#exercise{
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  width: 80vw;
+}
+
+#exercise a{
+  width: 90%;
+}
+
+#exercise #mark{
+  border-top: 1px solid var(--texts);
+  border-left: 1px solid var(--texts);
+  border-bottom: 1px solid var(--texts);
+  border-radius: 10px 0 0 10px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#exercise input{
+  appearance: none;
+  border: 1px solid var(--texts);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+#exercise input:checked{
+  background-color: #00a000;
 }
 
 .box{
-  border: 1px solid #000;
+  border-top: 1px solid var(--texts);
+  border-right: 1px solid var(--texts);
+  border-bottom: 1px solid var(--texts);
   width: 100%;
-  margin-top: 1.5rem;
   padding: 1rem;
-  border-radius: 10px;
+  border-radius: 0 10px 10px 0  ;
 }
 
 .box h3{
@@ -82,6 +131,7 @@ a {
 button{
   background-color: rgba(0, 0, 0, 0);
   border: none;
+  color: var(--texts);
   font-size: 1.2rem;
   cursor: pointer;
 }
@@ -94,7 +144,7 @@ footer{
   font-size: 1.35rem;
   text-align: center;
   bottom: 0;
-  background-color: #fff;
+  background-color: var(--bg-general);
   display: flex;
   justify-content: space-between;
   align-items: center;
