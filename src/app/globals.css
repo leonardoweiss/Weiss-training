@@ -114,6 +114,7 @@ main .links a:hover{
   width: 100%;
   padding: 1rem;
   border-radius: 0 10px 10px 0;
+  color: #dae9ff;
 }
 
 .box h3{
@@ -124,6 +125,11 @@ main .links a:hover{
 .infos{
   display: flex;
   justify-content: space-around;
+  color: #bed8ff;
+}
+
+.infos strong{
+  color: #5599ff;
 }
 
 a {

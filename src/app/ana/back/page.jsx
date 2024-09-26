@@ -2,7 +2,7 @@ import List from "@/components/List"
 
 const train = [
     {
-      name: 'puxada frente (pulley)',
+      name: 'Deadlift Sumô',
       series: 4,
       link: 'https://www.youtube.com/shorts/yp14vDyCUJA'
     },
