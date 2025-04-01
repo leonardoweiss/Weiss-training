@@ -21,6 +21,7 @@ body {
   overflow-x: hidden;
   background-color: var(--bg-general);
   background-image: url("../img/bg-wt.jpg");
+  background-size: cover;
   color: var(--texts);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
