@@ -3,8 +3,11 @@ function List({ exercises }) {
         <section id="list">
             {exercises.map(ex => (
                 <div id="exercise">
-                    <div id="mark">
-                        <input type="checkbox" name="check" id="check"/>
+                    <div>
+                        <label class="container">
+                            <input type="checkbox"/>
+                            <div class="checkmark"></div>
+                        </label>
                     </div>
                     <a href={ex.link}>
                         <div className="box">
