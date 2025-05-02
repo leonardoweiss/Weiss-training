@@ -6,6 +6,10 @@ export default function Home() {
       <div className="links">
         <Link href="/treino">Treino</Link>
       </div>
+      {/* <div className="imc">
+        <span>seu peso</span><input type="text"/> <br/>
+        <span>sua altura</span><input type="text"/>
+      </div> */}
     </main>
   );
 }

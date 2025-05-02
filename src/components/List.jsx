@@ -1,6 +1,6 @@
 function List({ exercises }) {
     return(
-        <section>
+        <section id="list">
             {exercises.map(ex => (
                 <div id="exercise">
                     <div id="mark">
