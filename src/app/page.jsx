@@ -50,7 +50,7 @@ export default function Home() {
           </ul>
       </div>
       <div className="links">
-        <Link href="/treino">Ir para o treino!</Link>
+        <Link href="/treino" className="go">Ir para o treino!</Link>
       </div>
     </main>
   );

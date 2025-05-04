@@ -69,19 +69,23 @@ main, .links{
 }
 
 main .links a{
-  background-color: #2dc38c;
+  background-color: var(--bg-components);
   padding: 2rem;
   margin: 2.25rem 0 0 0;
   font-weight: bold;
   font-size: 1.25rem;
   width: 80%;
-  border-radius: 10px;  
-  border: 2px solid #000;
+  border-radius: 10px;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
 
   &:hover{
     background-color: #62eab8;
   }
+}
+
+main .links a.go{
+  background-color: #2dc38c;
+  border: 2px solid #000;
 }
 
 .imc{
