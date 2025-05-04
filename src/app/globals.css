@@ -68,16 +68,95 @@ main, .links{
   width: 100%;
 }
 
-main .links a, .imc{
-  background-color: var(--bg-components);
+main .links a{
+  background-color: #2dc38c;
   padding: 2rem;
   margin: 2.25rem 0 0 0;
   font-weight: bold;
   font-size: 1.25rem;
   width: 80%;
   border-radius: 10px;  
+  border: 2px solid #000;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+
+  &:hover{
+    background-color: #62eab8;
+  }
 }
+
+.imc{
+  background-color: var(--bg-components);
+  padding: 2rem;
+  margin: 2.25rem 0 0 0;
+  font-weight: bold;
+  width: 80%;
+  border-radius: 10px;  
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+  text-align: left;
+
+  h2{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  input{
+    background-color: var(--bg-general);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem;
+    width: 30%;
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
+
+    &::placeholder{
+      color: #000;
+    }
+
+    &:focus{
+      outline: none;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  button{
+    background-color: #5599ff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    
+    &:hover{
+      background-color: #3884f7;
+    }
+  }
+
+  .classificacao{
+    font-size: 1.5rem;
+    background-color: #62eab8;
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 10px;
+  }
+
+  ul{
+    margin-left: 1.25rem;
+    margin-top: 1rem;
+  }
+}
+
+.day-training{
+    background-color: #f79438;
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+  
 
 #list{
   margin-bottom: 4rem;
